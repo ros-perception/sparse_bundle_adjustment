@@ -24,8 +24,8 @@ add_library(sba src/sba.cpp src/spa.cpp src/spa2d.cpp src/csparse.cpp src/proj.c
 #rosbuild_add_compile_flags(sba ${SSE_FLAGS})
 target_link_libraries(sba blas lapack cholmod cxsparse)
 
-install(DIRECTORY include/${PROJECT_NAME}/
+install(DIRECTORY include/sparse_bundle_adjustment/
         DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION})
 
-install(DIRECTORY include/bpcg
-        DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION})
+install(TARGETS sba
+        LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION})

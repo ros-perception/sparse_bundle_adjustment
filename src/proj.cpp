@@ -1,4 +1,4 @@
-#include <sba/proj.h>
+#include <sparse_bundle_adjustment/proj.h>
 
 namespace sba
 {

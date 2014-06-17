@@ -11,7 +11,7 @@
 #include <Eigen/StdVector>
 #include <map>
 
-#include <sba/node.h>
+#include <sparse_bundle_adjustment/node.h>
 
 namespace sba
 {

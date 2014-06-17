@@ -1,4 +1,4 @@
-#include <sba/visualization.h>
+#include <sparse_bundle_adjustment/visualization.h>
 
 namespace sba {
 

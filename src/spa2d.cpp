@@ -37,7 +37,7 @@
 //
 
 #include <stdio.h>
-#include "sba/spa2d.h"
+#include "sparse_bundle_adjustment/spa2d.h"
 #include <Eigen/Cholesky>
 
 using namespace Eigen;

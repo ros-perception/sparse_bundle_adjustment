@@ -50,7 +50,7 @@
 
 
 #include <stdio.h>
-#include "sba/sba.h"
+#include "sparse_bundle_adjustment/sba.h"
 #include <Eigen/Cholesky>
 
 using namespace Eigen;

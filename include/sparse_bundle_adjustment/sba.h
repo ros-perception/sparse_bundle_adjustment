@@ -53,14 +53,14 @@
 #include <algorithm>
 #include <Eigen/Cholesky>
 
-#include <sba/node.h>
-#include <sba/proj.h>
+#include <sparse_bundle_adjustment/node.h>
+#include <sparse_bundle_adjustment/proj.h>
 
 
 // sparse Cholesky
-#include <sba/csparse.h>
+#include <sparse_bundle_adjustment/csparse.h>
 // block jacobian pcg
-#include <bpcg/bpcg.h>
+#include <sparse_bundle_adjustment/bpcg/bpcg.h>
 
 // Defines for methods to use with doSBA().
 #define SBA_DENSE_CHOLESKY 0

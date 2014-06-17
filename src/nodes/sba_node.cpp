@@ -2,12 +2,12 @@
 #include <ros/time.h>
 
 // Messages
-#include <sba/Frame.h>
+#include <sparse_bundle_adjustment/Frame.h>
 #include <visualization_msgs/Marker.h>
-#include <sba/sba_file_io.h>
+#include <sparse_bundle_adjustment/sba_file_io.h>
 
-#include <sba/sba.h>
-#include <sba/visualization.h>
+#include <sparse_bundle_adjustment/sba.h>
+#include <sparse_bundle_adjustment/visualization.h>
 
 #include <map>
 

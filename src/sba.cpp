@@ -36,7 +36,7 @@
 // Visual Odometry classes and functions
 //
 
-#include "sba/sba.h"
+#include "sparse_bundle_adjustment/sba.h"
 
 using namespace Eigen;
 using namespace std;

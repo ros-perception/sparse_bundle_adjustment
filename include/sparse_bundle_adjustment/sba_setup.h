@@ -39,8 +39,8 @@
 #ifndef _SBA_SETUP_H_
 #define _SBA_SETUP_H_
 
-#include "sba/sba.h"
-#include "sba/spa2d.h"
+#include "sparse_bundle_adjustment/sba.h"
+#include "sparse_bundle_adjustment/spa2d.h"
 using namespace Eigen;
 using namespace sba;
 using namespace frame_common;

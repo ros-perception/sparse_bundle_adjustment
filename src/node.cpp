@@ -1,4 +1,4 @@
-#include <sba/node.h>
+#include <sparse_bundle_adjustment/node.h>
 
 using namespace std;
 using namespace Eigen;

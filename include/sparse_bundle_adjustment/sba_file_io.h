@@ -13,7 +13,7 @@
 #include <fstream>
 #include <iomanip>
 
-#include "sba/sba.h"
+#include "sparse_bundle_adjustment/sba.h"
 
 namespace Eigen
 {

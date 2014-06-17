@@ -2,7 +2,7 @@
 #define VSLAM_SYSTEM_VISUALIZATION_H
 
 #include <ros/ros.h>
-#include <sba/sba.h>
+#include <sparse_bundle_adjustment/sba.h>
 #include <visualization_msgs/Marker.h>
 
 namespace sba {

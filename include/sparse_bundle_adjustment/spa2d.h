@@ -55,9 +55,9 @@
 #include <vector>
 
 // sparse Cholesky
-#include <sba/csparse.h>
+#include <sparse_bundle_adjustment/csparse.h>
 // block jacobian pcg
-#include <bpcg/bpcg.h>
+#include <sparse_bundle_adjustment/bpcg/bpcg.h>
 
 // Defines for methods to use with doSBA().
 #define SBA_DENSE_CHOLESKY 0

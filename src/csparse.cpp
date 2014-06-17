@@ -37,7 +37,7 @@
 //
 
 #include <stdio.h>
-#include "sba/csparse.h"
+#include "sparse_bundle_adjustment/csparse.h"
 
 using namespace Eigen;
 

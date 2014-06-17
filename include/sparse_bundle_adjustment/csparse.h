@@ -71,7 +71,7 @@ extern "C" {
 #endif
 
 // block jacobian PCG
-#include "bpcg/bpcg.h"
+#include "sparse_bundle_adjustment/bpcg/bpcg.h"
 
 using namespace Eigen;
 using namespace std;

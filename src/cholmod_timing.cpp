@@ -33,7 +33,7 @@
  *********************************************************************/
 
 #include "cholmod.h"
-#include "sba/sba.h"
+#include "sparse_bundle_adjustment/sba.h"
 #include <time.h>
 #define CPUTIME ((double) (clock ( )) / CLOCKS_PER_SEC)
 
