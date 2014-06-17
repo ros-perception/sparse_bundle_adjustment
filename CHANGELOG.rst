@@ -2,8 +2,8 @@
 Changelog for package sparse_bundle_adjustment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.1 (2014-06-17)
+------------------
 * add depend on eigen
 * Contributors: Michael Ferguson
 
