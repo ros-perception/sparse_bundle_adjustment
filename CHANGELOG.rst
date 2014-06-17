@@ -2,6 +2,11 @@
 Changelog for package sparse_bundle_adjustment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* major build/install fixes for the farm
+* Contributors: Michael Ferguson
+
 0.3.1 (2014-06-17)
 ------------------
 * add depend on eigen
