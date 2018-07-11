@@ -325,7 +325,7 @@ namespace sba
 
     /// scaling factor for quaternion derivatives relative to translational ones;
     /// not sure if this is needed, it's close to 1.0
-    const static double qScale = 1.0;
+    static constexpr double qScale = 1.0;
 
     /// dpc/dq = dR'/dq [pw-t], in homogeneous form, with q a quaternion param
     /// 

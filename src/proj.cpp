@@ -74,7 +74,7 @@ namespace sba
     double py = pc(1);
     double pz = pc(2);
     double ipz2 = 1.0/(pz*pz);
-    if (isnan(ipz2) ) { printf("[SetJac] infinite jac\n");  *(int *)0x0 = 0; }
+    if (std::isnan(ipz2) ) { printf("[SetJac] infinite jac\n");  *(int *)0x0 = 0; }
 
     double ipz2fx = ipz2*nd.Kcam(0,0); // Fx
     double ipz2fy = ipz2*nd.Kcam(1,1); // Fy
@@ -125,7 +125,7 @@ namespace sba
 #ifdef DEBUG
     for (int i=0; i<2; i++)
       for (int j=0; j<6; j++)
-        if (isnan(jacc(i,j)) ) { printf("[SetJac] NaN in jacc(%d,%d)\n", i, j);  *(int *)0x0 = 0; }
+        if (std::isnan(jacc(i,j)) ) { printf("[SetJac] NaN in jacc(%d,%d)\n", i, j);  *(int *)0x0 = 0; }
 #endif
     
     // Set Hessians + extras.
@@ -148,7 +148,7 @@ namespace sba
     {
 #ifdef DEBUG
       printf("[CalcErr] negative Z! Node %d \n",ndi);
-      if (isnan(err[0]) || isnan(err[1]) ) printf("[CalcErr] NaN!\n"); 
+      if (std::isnan(err[0]) || std::isnan(err[1]) ) printf("[CalcErr] NaN!\n");
 #endif
       err = Eigen::Vector3d(0.0,0.0,0.0);
       return 0.0;
@@ -204,7 +204,7 @@ namespace sba
     double py = pc(1);
     double pz = pc(2);
     double ipz2 = 1.0/(pz*pz);
-    if (isnan(ipz2) ) { printf("[SetJac] infinite jac\n");  *(int *)0x0 = 0; }
+    if (std::isnan(ipz2) ) { printf("[SetJac] infinite jac\n");  *(int *)0x0 = 0; }
 
     double ipz2fx = ipz2*nd.Kcam(0,0); // Fx
     double ipz2fy = ipz2*nd.Kcam(1,1); // Fy
@@ -265,7 +265,7 @@ namespace sba
 #ifdef DEBUG
     for (int i=0; i<2; i++)
       for (int j=0; j<6; j++)
-        if (isnan(jacc(i,j)) ) { printf("[SetJac] NaN in jacc(%d,%d)\n", i, j);  *(int *)0x0 = 0; }
+        if (std::isnan(jacc(i,j)) ) { printf("[SetJac] NaN in jacc(%d,%d)\n", i, j);  *(int *)0x0 = 0; }
 #endif
     if (useCovar)
     {
@@ -317,7 +317,7 @@ namespace sba
     {
 #ifdef DEBUG
       printf("[CalcErr] negative Z! Node %d\n",ndi);
-      if (isnan(err[0]) || isnan(err[1]) ) printf("[CalcErr] NaN!\n"); 
+      if (std::isnan(err[0]) || std::isnan(err[1]) ) printf("[CalcErr] NaN!\n");
 #endif
       err.setZero();
       
