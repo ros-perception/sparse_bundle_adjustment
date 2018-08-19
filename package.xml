@@ -1,7 +1,7 @@
 <package>
   <name>sparse_bundle_adjustment</name>
   <description>ROS wrapper for the sparse bundle adjustment (sba) library (needed for slam_karto)</description>
-  <version>0.3.2</version>
+  <version>0.4.0</version>
   <license>BSD</license>
   <maintainer email="fergs@unboundedrobotics.com">Michael Ferguson</maintainer>
   <maintainer email="lbettaieb@fetchrobotics.com">Luc Bettaieb</maintainer>

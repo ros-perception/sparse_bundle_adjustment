@@ -2,8 +2,8 @@
 Changelog for package sparse_bundle_adjustment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.4.0 (2018-08-18)
+------------------
 * Merge pull request `#3 <https://github.com/ros-perception/sparse_bundle_adjustment/issues/3>`_ from moriarty/melodic-devel
   [melodic-devel][18.04] fix compile errors
 * [melodic-devel][18.04] fix compile errors
