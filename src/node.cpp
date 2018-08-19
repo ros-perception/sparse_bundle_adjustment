@@ -42,7 +42,7 @@ namespace sba
     if (sn >= 0.9999)            // too close to high derivatives
       qrot.coeffs().head<3>() *= -1.0/(sqrt(sn)*1.0001); // switch sides; 1e-4 seems to work well
     qrot.w() = sqrt(1.0 - qrot.coeffs().head<3>().squaredNorm());
-    if (isnan(qrot.x()) || isnan(qrot.y()) || isnan(qrot.z()) || isnan(qrot.w()) )
+    if (std::isnan(qrot.x()) || std::isnan(qrot.y()) || std::isnan(qrot.z()) || std::isnan(qrot.w()) )
       { 
         printf("[NormRot] Bad quaternion: %f %f %f %f\n", qrot.x(), qrot.y(), qrot.z(), qrot.w()); 
         exit(1); 
@@ -123,7 +123,7 @@ namespace sba
   {
       qrot.normalize();
       if (qrot.w() < 0) qrot.coeffs().head<3>() = -qrot.coeffs().head<3>();
-      if (isnan(qrot.x()) || isnan(qrot.y()) || isnan(qrot.z()) || isnan(qrot.w()) )
+      if (std::isnan(qrot.x()) || std::isnan(qrot.y()) || std::isnan(qrot.z()) || std::isnan(qrot.w()) )
         { 
           printf("[NormRot] Bad quaternion in normRotLocal(): %f %f %f %f\n", qrot.x(), qrot.y(), qrot.z(), qrot.w());
           exit(1); 

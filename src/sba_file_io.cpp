@@ -114,7 +114,7 @@ int sba::readBundlerFile(const char *filename, SysSBA& sbaout)
 int sba::writeBundlerFile(const char *filename, SysSBA& sbain)
 {
     ofstream outfile(filename, ios_base::trunc);
-    if (outfile == NULL)
+    if (!outfile)
     {
         cout << "Can't open file " << filename << endl;
         return -1;
@@ -204,7 +204,7 @@ int  sba::ParseBundlerFile(const char *fin,	// input file
 		)
 {
     ifstream ifs(fin);
-    if (ifs == NULL)
+    if (!ifs)
       {
         cout << "Can't open file " << fin << endl;
         return -1;
@@ -324,7 +324,7 @@ void sba::writeLourakisFile(const char *fname, SysSBA& sba)
     char name[1024];
     sprintf(name,"%s-cams.txt",fname);
     FILE *fn = fopen(name,"w");
-    if (fn == NULL)
+    if (fn == nullptr)
       {
         cout << "[WriteFile] Can't open file " << name << endl;
         return;
@@ -346,7 +346,7 @@ void sba::writeLourakisFile(const char *fname, SysSBA& sba)
 
     sprintf(name,"%s-pts.txt",fname);
     fn = fopen(name,"w");
-    if (fn == NULL)
+    if (fn == nullptr)
       {
         cout << "[WriteFile] Can't open file " << name << endl;
         return;
@@ -382,7 +382,7 @@ void sba::writeLourakisFile(const char *fname, SysSBA& sba)
     // write camera calibartion
     sprintf(name,"%s-calib.txt",fname);
     fn = fopen(name,"w");
-    if (fn == NULL)
+    if (fn == nullptr)
       {
         cout << "[WriteFile] Can't open file " << name << endl;
         return;
@@ -401,7 +401,7 @@ void sba::writeLourakisFile(const char *fname, SysSBA& sba)
 void sba::writeA(const char *fname, SysSBA& sba)
 {
     ofstream ofs(fname);
-    if (ofs == NULL)
+    if (!ofs)
       {
         cout << "Can't open file " << fname << endl;
         return;
@@ -422,7 +422,7 @@ void sba::writeSparseA(const char *fname, SysSBA& sba)
 
     {
       ofstream ofs(name);
-      if (ofs == NULL)
+      if (!ofs)
         {
           cout << "Can't open file " << fname << endl;
           return;
@@ -462,7 +462,7 @@ void sba::writeSparseA(const char *fname, SysSBA& sba)
 
     {
       ofstream ofs(name);
-      if (ofs == NULL)
+      if (!ofs)
         {
           cout << "Can't open file " << fname << endl;
           return;
@@ -620,7 +620,7 @@ int  sba::ParseGraphFile(const char *fin,	// input file
 {
   // input stream
   ifstream ifs(fin);
-  if (ifs == NULL)
+  if (!ifs)
     {
       cout << "Can't open file " << fin << endl;
       return -1;
@@ -783,7 +783,7 @@ int  sba::ParseGraphFile(const char *fin,	// input file
 int sba::writeGraphFile(const char *filename, SysSBA& sba, bool mono)
 {
     ofstream outfile(filename, ios_base::trunc);
-    if (outfile == NULL)
+    if (!outfile)
     {
         cout << "Can't open file " << filename << endl;
         return -1;
@@ -1002,7 +1002,7 @@ sba::ParseSPAGraphFile(const char *fin, // input file
    std::vector< Eigen::Matrix<double,6,6>, Eigen::aligned_allocator<Eigen::Matrix<double,6,6> > > &prec) // constraint covariance
 {
   ifstream ifs(fin);
-  if (ifs == NULL)
+  if (!ifs)
     {
       cout << "Can't open file " << fin << endl;
       return -1;
