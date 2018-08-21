@@ -2,8 +2,8 @@
 Changelog for package sparse_bundle_adjustment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.4.1 (2018-08-21)
+------------------
 * Merge pull request `#4 <https://github.com/ros-perception/sparse_bundle_adjustment/issues/4>`_ from moriarty/eigen-and-pkg-fmt-2
   Fixes Eigen3 warnings and bumps to package.xml format 2
 * Update email address so I see build failures
