@@ -2,6 +2,15 @@
 Changelog for package sparse_bundle_adjustment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge pull request `#4 <https://github.com/ros-perception/sparse_bundle_adjustment/issues/4>`_ from moriarty/eigen-and-pkg-fmt-2
+  Fixes Eigen3 warnings and bumps to package.xml format 2
+* Update email address so I see build failures
+* [REP-140] Package.xml format 2
+* fix deprecated eigen3 cmake warning
+* Contributors: Alexnader Moriarty, Michael Ferguson, Steffen Fuchs
+
 0.4.0 (2018-08-18)
 ------------------
 * Merge pull request `#3 <https://github.com/ros-perception/sparse_bundle_adjustment/issues/3>`_ from moriarty/melodic-devel
