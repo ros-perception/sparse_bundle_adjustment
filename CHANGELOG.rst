@@ -2,8 +2,8 @@
 Changelog for package sparse_bundle_adjustment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.4.2 (2018-08-23)
+------------------
 * rework how we set the C++ standard
 * Merge pull request `#6 <https://github.com/ros-perception/sparse_bundle_adjustment/issues/6>`_ from moriarty/set-cpp-11
   Set C++ 11
