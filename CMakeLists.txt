@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(sparse_bundle_adjustment)
 
+add_compile_options(-std=c++11)
+
 find_package(catkin REQUIRED)
 find_package(Eigen3 REQUIRED)
 
