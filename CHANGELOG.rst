@@ -2,6 +2,16 @@
 Changelog for package sparse_bundle_adjustment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* rework how we set the C++ standard
+* Merge pull request `#6 <https://github.com/ros-perception/sparse_bundle_adjustment/issues/6>`_ from moriarty/set-cpp-11
+  Set C++ 11
+* [Maintainers] Add myself as a maintainer
+  Mostly so that I can see build failures.
+* [CMake][C++11] compile with -std=c++11
+* Contributors: Alexander Moriarty, Michael Ferguson
+
 0.4.1 (2018-08-21)
 ------------------
 * Merge pull request `#4 <https://github.com/ros-perception/sparse_bundle_adjustment/issues/4>`_ from moriarty/eigen-and-pkg-fmt-2
