@@ -4,7 +4,7 @@
   <version>0.4.2</version>
   <license>BSD</license>
   <maintainer email="mfergs7@gmail.com">Michael Ferguson</maintainer>
-  <maintainer email="lbettaieb@fetchrobotics.com">Luc Bettaieb</maintainer>
+  <maintainer email="luc.bettaieb@gmail.com">Luc Bettaieb</maintainer>
   <maintainer email="amoriarty@fetchrobotics.com">Alexander Moriarty</maintainer>
 
   <buildtool_depend>catkin</buildtool_depend>
