@@ -39,6 +39,7 @@
 #include <stdio.h>
 #include "sparse_bundle_adjustment/spa2d.h"
 #include <Eigen/Cholesky>
+#include <chrono>
 
 using namespace Eigen;
 using namespace std;
@@ -46,17 +47,12 @@ using namespace std;
 #include <iostream>
 #include <iomanip>
 #include <fstream>
-#include <sys/time.h>
 
 // elapsed time in microseconds
 static long long utime()
 {
-  timeval tv;
-  gettimeofday(&tv,NULL);
-  long long ts = tv.tv_sec;
-  ts *= 1000000;
-  ts += tv.tv_usec;
-  return ts;
+  auto duration = std::chrono::system_clock::now().time_since_epoch();
+  return std::chrono::duration_cast<std::chrono::microseconds>(duration).count();
 }
 
 namespace sba

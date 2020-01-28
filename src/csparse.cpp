@@ -44,7 +44,6 @@ using namespace Eigen;
 #include <iostream>
 #include <iomanip>
 #include <fstream>
-#include <sys/time.h>
 #include <algorithm>
 
 using namespace std;
