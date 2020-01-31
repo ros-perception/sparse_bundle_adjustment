@@ -2,8 +2,8 @@
 Changelog for package sparse_bundle_adjustment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.4.3 (2020-01-31)
+------------------
 * remove bouncing email from maintainers
 * Merge pull request `#9 <https://github.com/ros-perception/sparse_bundle_adjustment/issues/9>`_ from seanyen/modern_cpp
   [windows] use modern cpp & more portable fixes
