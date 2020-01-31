@@ -37,6 +37,7 @@
 //
 
 #include "sparse_bundle_adjustment/sba.h"
+#include <chrono>
 
 using namespace Eigen;
 using namespace std;
@@ -44,15 +45,10 @@ using namespace std;
 //#define DEBUG
 
 // elapsed time in microseconds
-#include <sys/time.h>
 static long long utime()
 {
-  timeval tv;
-  gettimeofday(&tv,NULL);
-  long long ts = tv.tv_sec;
-  ts *= 1000000;
-  ts += tv.tv_usec;
-  return ts;
+  auto duration = std::chrono::system_clock::now().time_since_epoch();
+  return std::chrono::duration_cast<std::chrono::microseconds>(duration).count();
 }
 
 
