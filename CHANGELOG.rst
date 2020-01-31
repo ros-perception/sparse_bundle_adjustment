@@ -2,6 +2,15 @@
 Changelog for package sparse_bundle_adjustment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* remove bouncing email from maintainers
+* Merge pull request `#9 <https://github.com/ros-perception/sparse_bundle_adjustment/issues/9>`_ from seanyen/modern_cpp
+  [windows] use modern cpp & more portable fixes
+* modernize cpp code & CMake files.
+* Changing maintainer email
+* Contributors: Luc Bettaieb, Michael Ferguson, seanyen
+
 0.4.2 (2018-08-23)
 ------------------
 * rework how we set the C++ standard
