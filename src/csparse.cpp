@@ -408,6 +408,7 @@ namespace sba
     chInited = false;
     Common.print=0;
 #endif
+    useCholmod = false;
     asize = 0;
     csize = 0;
     nnz = 0;
